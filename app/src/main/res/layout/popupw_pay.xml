@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="330dp"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:src="@drawable/close"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="支付订单"
+                android:textColor="#323232"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_pay_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="请在 XXXXX 内完成支付"
+            android:textColor="#ffa019"
+            android:textSize="13sp"
+            android:layout_marginBottom="14dp"
+            android:visibility="gone"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dddddd" />
+
+        <LinearLayout
+            android:id="@+id/ll_pay_channel"
+            android:layout_width="match_parent"
+            android:layout_height="222dp"
+            android:orientation="vertical"
+
+            >
+
+        </LinearLayout>
+    </LinearLayout>
+    
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:text="立即支付 ￥ 20.00"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:background="#ffa019"
+        />
+
+</RelativeLayout>

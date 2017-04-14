@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_pay_backg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:id="@+id/thing"
+        android:background="@drawable/corner_bg"
+        android:layout_marginTop="30sp"
+        android:layout_width="345dp"
+        android:layout_height="345dp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#f0f0f0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="需支付"
+
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ￥ 20.00"
+
+                android:textSize="21sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:src="@mipmap/ic_launcher" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@id/thing"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="患者扫码支付"
+            />
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第 1 步：打开微信的“扫一扫”"
+            android:drawableRight="@drawable/saoyisao"
+            />
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第 2 步：扫描二维码，完成支付"
+            />
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="医生代患者支付："
+            android:layout_marginTop="30dp"
+            />
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第 1 步：将此二维码页面截图保存;"
+            android:drawableRight="@drawable/saoyisao"
+            />
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第 2 步：打开支付宝的“扫一扫”"
+            android:drawableRight="@drawable/saoyisao"
+            />
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第 3 步：点击扫描页面右上角的相册，上传二维码截图;"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

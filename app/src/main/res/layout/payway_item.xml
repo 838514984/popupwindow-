@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/weixin2x" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_payname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信支付"
+                android:textColor="#323232"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐安装xxx"
+                android:textColor="#818181"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_check"
+            android:layout_width="22.5dp"
+            android:layout_height="22.5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/pay_selector"
+            android:button="@null" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dddddd" />
+
+</LinearLayout>
